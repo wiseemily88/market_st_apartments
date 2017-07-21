@@ -86,7 +86,7 @@ Create a Building class that allows for the following interaction pattern.
 > building.units.count
 # => 1
 
-> a2 = Apartment.new({number: 1, monthly_rent: 750, be    drooms: 0, bathrooms: 1})
+> a2 = Apartment.new({number: 1, monthly_rent: 750, bedrooms: 0, bathrooms: 1})
 # => #<Apartment:0x007f84b204f720 ...>
 
 > building.add_unit(a2)
