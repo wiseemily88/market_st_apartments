@@ -1,10 +1,9 @@
 require './lib/renter'
 
 class Apartment
+  attr_reader :number, :monthly_rent, :bathrooms, :bedrooms, :renter
 
-
-attr_reader :number, :monthly_rent, :bathrooms, :bedrooms, :renter
-  def initialize (unit)
+  def initialize(unit)
     @number = unit[:number]
     @monthly_rent = unit[:monthly_rent]
     @bathrooms = unit[:bathrooms]
@@ -15,6 +14,4 @@ attr_reader :number, :monthly_rent, :bathrooms, :bedrooms, :renter
   def add_renter(renter)
     @renter = renter
   end
-
-
 end

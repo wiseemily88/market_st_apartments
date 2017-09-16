@@ -48,7 +48,6 @@ class BuildingTest < Minitest::Test
     building.add_unit(a2)
 
     assert_equal 700 , building.average_rent
-
   end
 
   def test_total_annual_rent_returns_every_unit
@@ -77,7 +76,6 @@ class BuildingTest < Minitest::Test
 
     joe = Renter.new("Joe")
     a1.add_renter(joe)
-
 
     assert_equal 50.0, building.occupancy
   end
