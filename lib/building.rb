@@ -1,12 +1,8 @@
-require 'pry'
-
-
 class Building
   attr_reader :units, :occupancy
 
   def initialize
     @units = []
-    @occupancy = 0.0
   end
 
   def add_unit(apartment)
@@ -23,13 +19,11 @@ class Building
 
   def occupancy
     if units.empty?
-      return @occupancy
+      0.0
     else
-      (number_of_occupied_units.to_f / units.count.to_f ) * 100
+      (number_of_occupied_units / units.count.to_f ) * 100
     end
   end
-
-
 
   private
 
