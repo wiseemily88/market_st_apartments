@@ -29,8 +29,9 @@ class ApartmentTest < Minitest::Test
     joe = Renter.new("Joe")
 
     a1.add_renter(joe)
-    
+
     assert_instance_of Renter, a1.renter
+    assert_equal joe, a1.renter
   end
 
 end
