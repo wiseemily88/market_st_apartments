@@ -108,4 +108,3 @@ Create a Building class that allows for the following interaction pattern.
 > building.occupancy
 # => 50.0
 ```
-
